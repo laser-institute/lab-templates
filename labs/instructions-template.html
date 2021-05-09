@@ -11,7 +11,7 @@
 
 <meta name="author" content="LASER Team" />
 
-<meta name="date" content="2021-05-08" />
+<meta name="date" content="2021-05-09" />
 
 <title>LASER Lab Template</title>
 
@@ -243,28 +243,38 @@ div.tocify {
 
 <h1 class="title toc-ignore">LASER Lab Template</h1>
 <h4 class="author">LASER Team</h4>
-<h4 class="date">May 8, 2021</h4>
+<h4 class="date">May 9, 2021</h4>
 
 </div>
 
 
-<p>Style guide:</p>
+<div id="style-guide" class="section level2">
+<h2>Style guide:</h2>
+<ul>
+<li><p>YAML</p>
+<ul>
+<li>Table of contents should be floating and at depth 4</li>
+<li></li>
+</ul></li>
+<li><p>HEADERS</p>
 <ul>
 <li>Level 1 header not used. Only for Lab title</li>
 <li>Level 2 Headers are main headers and in all caps and identify step in LA workflow addressed</li>
 <li>Level 3 Headers for main topic covered under each workflow process and follow tidyverse Verb Noun format, e.g. Import Data, Tidy Text,</li>
 <li>Level 4 &amp; 5 headers for subtopics format as you please. And don’t be afraid to overuse.</li>
-<li>Bulleted and numbered lists use tight layout</li>
-<li>when introducing new packages provide a solid description, use hex sticker of available and set width to 20%</li>
-<li>use your own discretion for other images</li>
-<li>when introducing new functions provide a very thorough explanation of the function and key arguments used</li>
-<li>Label code chunks with one word or hyphenated two word description like “import-csv”<br />
-</li>
+</ul></li>
+<li><p>Bulleted and numbered lists use tight layout</p></li>
+<li><p>when introducing new packages provide a solid description, use hex sticker of available and set width to 20%</p></li>
+<li><p>use your own discretion for other images</p></li>
+<li><p>when introducing new functions provide a very thorough explanation of the function and key arguments used</p></li>
+<li><p>Label code chunks with one word or hyphenated two word description like “import-csv”<br />
+</p></li>
 </ul>
+</div>
 <div id="prepare" class="section level2">
 <h2>1. PREPARE</h2>
 <p>Start each lab by providing a brief but engaging overview of the topic (e.g., text mining) that you’ll be covering over the next two days.</p>
-<p>Follow the overview with a quick bulleted list introducing each lab and what they will cover. For example:</p>
+<p>For Lab 1, follow the overview with a quick bulleted list introducing each lab and what they will cover. For example:</p>
 <ul>
 <li><strong>Lab 1: Tidy Text, Tokens, &amp; Twitter</strong>. We take a closer look at the literature and research questions that will be guiding our analysis; importing data through Twitter’s developer API; and wrangling our data into a one-token-per-row tidy text format.</li>
 <li><strong>Lab 2: Word Counts, Clouds &amp; Frequencies.</strong> For our second lab, we use simple summary statistics and data visualization to explore our data and see what insight it provides in response to our questions.</li>
@@ -623,7 +633,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3",
+      selectors: "h1,h2,h3,h4",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
