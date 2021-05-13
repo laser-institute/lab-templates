@@ -125,6 +125,8 @@ Let's go ahead and load `tidytext`:
 library(tidytext)
 ```
 
+------------------------------------------------------------------------
+
 ## 2. WRANGLE
 
 Provide a 1-paragraph or longer overview to your wrangle section along with bulleted intro of key topics that will also be your level 3 headers like so:
@@ -287,6 +289,8 @@ Instruction and explanation of code chunk ...
 
 Further explanation of code chunk if needed...
 
+------------------------------------------------------------------------
+
 ## 3. EXPLORE
 
 Provide a 1-paragraph or longer overview to your explore section along with bulleted intro of key topics covered like so:
@@ -410,7 +414,7 @@ Instruction and explanation of code chunk ...
 
 Further explanation of code chunk if needed...
 
-\
+------------------------------------------------------------------------
 
 ## 4. MODEL
 
@@ -459,7 +463,7 @@ Instruction and explanation of code chunk ...
 
 Further explanation of code chunk if needed...
 
-### 3b. Main Topic
+### 4b. Main Topic
 
 Intro text....
 
@@ -497,7 +501,7 @@ Instruction and explanation of code chunk ...
 
 Further explanation of code chunk if needed...
 
-### 3c. Main Topic
+### 4c. Main Topic
 
 Intro text....
 
@@ -534,3 +538,128 @@ Instruction and explanation of code chunk ...
 ```
 
 Further explanation of code chunk if needed...
+
+------------------------------------------------------------------------
+
+## 5. COMMUNICATE
+
+Provide a 1-paragraph or longer overview to your explore section along with bulleted intro of key topics covered like so:
+
+a.  **Main Topic 1**. Loren ipsum dolor...
+b.  **Main Topic 2**. Loren ipsum dolor...
+c.  **Main Topic 3**. Loren ipsum dolor...
+d.  **Main Topic 4**. Loren ipsum dolor...
+
+### 5a. Main Topic
+
+Intro text....
+
+Instruction and explanation of code chunk if needed ...
+
+```{r}
+
+```
+
+Further explanation of code chunk if needed, especially if a new function...
+
+Further explanation of data if needed, e.g. codebook or explanatory text and/or link to description of data source...
+
+#### Subtopic 1 (If needed)
+
+Intro text...
+
+Instruction and explanation of code chunk ...
+
+```{r}
+
+```
+
+Further explanation of code chunk if needed...
+
+#### Subtopic 2 (If needed)
+
+Intro text...
+
+Instruction and explanation of code chunk ...
+
+```{r}
+
+```
+
+Further explanation of code chunk if needed...
+
+### 5b. Main Topic
+
+Intro text....
+
+Instruction and explanation of code chunk if needed ...
+
+```{r}
+
+```
+
+Further explanation of code chunk if needed, especially if a new function...
+
+Further explanation of data if needed, e.g. codebook or explanatory text and/or link to description of data source...
+
+#### Subtopic 1 (If needed)
+
+Intro text...
+
+Instruction and explanation of code chunk ...
+
+```{r}
+
+```
+
+Further explanation of code chunk if needed...
+
+#### Subtopic 2 (If needed)
+
+Intro text...
+
+Instruction and explanation of code chunk ...
+
+```{r}
+
+```
+
+Further explanation of code chunk if needed...
+
+### 5c. Main Topic
+
+Intro text....
+
+Instruction and explanation of code chunk if needed ...
+
+```{r}
+
+```
+
+Further explanation of code chunk if needed, especially if a new function...
+
+Further explanation of data if needed, e.g. codebook or explanatory text and/or link to description of data source...
+
+#### Subtopic 1 (If needed)
+
+Intro text...
+
+Instruction and explanation of code chunk ...
+
+```{r}
+
+```
+
+Further explanation of code chunk if needed...
+
+#### Subtopic 2 (If needed)
+
+Intro text...
+
+Instruction and explanation of code chunk ...
+
+```{r}
+
+```
+
+Further explanation of code chunk if needed...\
