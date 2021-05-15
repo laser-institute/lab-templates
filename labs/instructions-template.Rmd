@@ -1,6 +1,7 @@
 ---
-title: "LASER Lab Template"
-author: "LASER Team"
+title: "Title"
+subtitle: "Learning Lab X Tutorial"
+author: "LASER Institute"
 date: "`r format(Sys.Date(),'%B %e, %Y')`"
 output:
   html_document:
@@ -19,17 +20,18 @@ Start each lab by providing a brief but engaging overview of the topic (e.g., te
 
 For Lab 1, follow the overview with a quick bulleted list introducing each lab and what they will cover. For example:
 
--   **Lab 1: Tidy Text, Tokens, & Twitter**. We take a closer look at the literature and research questions that will be guiding our analysis; importing data through Twitter's developer API; and wrangling our data into a one-token-per-row tidy text format.
--   **Lab 2: Word Counts, Clouds & Frequencies.** For our second lab, we use simple summary statistics and data visualization to explore our data and see what insight it provides in response to our questions.
--   **Lab 3: Sentiment Analysis & School Reform**. We focus on the use of lexicons to compare the sentiment of tweets about the [NGSS](https://www.nextgenscience.org/) and [CCSS](http://www.corestandards.org/) state standards in order to better understand public reaction to these two curriculum reform efforts. 
--   **Lab 4: Topic Models & Tea Leaves.** In our final lab we introduce an approach to identify "topics" by examining how words cohere into different latent themes based on patterns of co-occurrence of words within documents.
+-   **Lab 1: Title**. Short description...
+-   **Lab 2: Title**. Short description...
+-   **Lab 3: Title**. Short description... 
+-   **Lab 4: Title**. Short description...
 
 For subsequent labs, provide just a brief overview of the primary topics covered by the lab, along with a with a bulleted list introducing primary topics. Lab 4 for text mining for example, would be something like:
 
-1.  **Prepare**: In this section we look at an extension of the tidy text workflow and are introduced to the `topicmodels` and `stm` packages for topic modeling.
-2.  **Wrangle**: We revisit tidying and tokenizing text but are also introduced to the the `stm` package. This package makes use of `tm`text mining package to preprocess text and will also be our first introduction to word stemming document term matrices.
-3.  **Model**: We take a look at two different approaches to topic modeling: Latent Dirichlet Allocation (LDA) and Structural Topic Modeling (STM), which is very similar to LDA but can use metadata about documents to improve the assignment of words to "topics" and examine relationships between topics and covariates. 
-4.  **Explore**: To further explore the results of our topic model, we use several handy functions from including the `findThoughts` function for viewing documents assigned to a given topic and the `toLDAvis` function for exploring topic and word distributions.
+1.  **Prepare**: Short description...
+2.  **Wrangle**: Short description...
+3.  **Model**: Short description...
+4.  **Explore**: Short description...
+5.  **Communicate** : Short description...
 
 ### 1a. Understand the Context
 
@@ -39,7 +41,7 @@ In Lab 1 you may want to introduce LASER scholars to the study and/or data that 
 
 In subsequent labs this may be simply a reminder of the literature or data or what they are trying to accomplish with the data and and any new background information that might be needed and is not shared in the opening paragraph(s).
 
-It can also be omitted or just folded into introduction at beginning and save hit
+It can also be omitted or just folded into introduction at beginning.
 
 #### Article Title
 
@@ -61,15 +63,13 @@ This section instructed
 
 \
 
-Text Mining Overview
-
 ### 1c. Load Packages
 
 #### Prior Packages
 
 Brief intro text...
 
-Instruct participants to type or copy and paste the code into their console or add to the exercise file since they will need these packages for "Your Turn" exercises:
+Instruct participants to run the corresponding the code into their guided practice Rmd file since they will need these packages for "Your Turn" exercises:
 
 ```{r load-packages}
 library(dplyr)
@@ -85,13 +85,7 @@ Introduce any new packages you'll be using in this lab that they will need immed
 
 ![](img/tidytext.png){width="20%"}
 
-Text data, by it's very nature is ESPECIALLY untidy and sometimes referred to as "unstructured." The `tidytext`package provide functions and supporting data sets to allow conversion of text to and from tidy formats, and to switch seamlessly between tidy tools and existing text mining packages.
-
-As we'll learn later in this lab, using tidy data principles can make many text mining tasks easier, more effective, and consistent with tools already in wide use. Much of the infrastructure needed for text mining with tidy data frames already exists in `tidyverse` packages with which we've already been introduced.
-
-For a more comprehensive introduction to the `tidytext` package, we cannot recommend enough the free online book, [Text Mining with R: A Tidy Approach](https://www.tidytextmining.com) by Silge and Robinson (2018).
-
-Let's go ahead and load `tidytext`:
+Include icon if available and instruct participants to load `package`:
 
 ```{r}
 library(tidytext)
@@ -101,20 +95,20 @@ library(tidytext)
 
 ## 2. WRANGLE
 
-Provide a 1-paragraph or longer overview to your wrangle section along with bulleted intro of key topics that will also be your level 3 headers like so:
+Provide a 1-paragraph or longer overview to your explore section along with bulleted intro of key topics covered like so:
 
-a.  **Import Data**. In this section, we introduce the `rtweet` package and some key functions to search for tweets or users of interest.
-b.  **Tidy Tweets**. We revisit the `tidytext` package to both "tidy" and tokenize our tweets in order to create our data frame for analysis.
-c.  **Get Sentiments**. We conclude our data wrangling by introducing sentiment lexicons and the `inner_join()` function for appending sentiment values to our data frame.
+a.  **Main Topic 1**. Loren ipsum dolor...
+b.  **Main Topic 2**. Loren ipsum dolor...
+c.  **Main Topic 3**. Loren ipsum dolor...
 
-### 2a. Import Data
+### 2a. Main Topic 1
 
 Intro text....
 
 Instruction and explanation of code chunk if needed ...
 
 ```{r import-tweets, eval=FALSE}
-ccss_tweets <- read_csv("data/ccss-tweets.csv")
+
 ```
 
 Further explanation of code chunk if needed, especially if a new function...
@@ -164,7 +158,7 @@ Extra credit for using the `%>%` pipe operator and efficient use of arguments to
 
 You're output should look something like this:
 
-### 2b. Tidy Data
+### 2b. Main Topic 2
 
 Intro text....
 
@@ -225,7 +219,7 @@ Instruction and explanation of code chunk ...
 
 Further explanation of code chunk if needed...
 
-### 2c. Transform Data
+### 2c. Main Topic 3
 
 Intro text....
 
@@ -270,7 +264,6 @@ Provide a 1-paragraph or longer overview to your explore section along with bull
 a.  **Main Topic 1**. Loren ipsum dolor...
 b.  **Main Topic 2**. Loren ipsum dolor...
 c.  **Main Topic 3**. Loren ipsum dolor...
-d.  **Main Topic 4**. Loren ipsum dolor...
 
 ### 3a. Main Topic
 
