@@ -147,16 +147,6 @@ If needed, list tasks and provide hints or examples of expected outputs:
 
 ##### Example:
 
-For the remainder of the lab, you'll be asked to use your own Twitter data. Complete the following steps before proceeding to the 2b. Tidy Text section:
-
-1.  Create a new code chunk and write a query based on a STEM area of interest.
-2.  Subset your data to remove any unnecessary tweets from analysis.
-3.  Assign your search to a new object called `my_tweets`.
-4.  Output your new dataset using the `datatable()` function from the `DT` package and take a quick look.
-
-Extra credit for using the `%>%` pipe operator and efficient use of arguments to keep your code succinct and using the `<-` assignment operator only once.
-
-You're output should look something like this:
 
 ### 2b. Main Topic 2
 
@@ -172,28 +162,6 @@ Further explanation of code chunk if needed...
 
 ##### Example:
 
-The `tidytext` package provides the incredibly powerful `unnest_tokens()` function to tokenize text (including tweets!) and convert them to a one-token-per-row format.
-
-Let's tokenize our tweets by using this function to split each tweet into a single row to make it easier to analyze:
-
-```{r unnest-tokens, eval=FALSE}
-ccss_unigrams <- unnest_tokens(ccss_tweets, 
-                               output = word, 
-                               input = text,
-                               token = "tweets")
-```
-
-There is A LOT to unpack with this function. First notice that `unnest_tokens()` expects a data frame as the first argument, followed by two column names. The second argument is an output column name that doesn't currently exist but will be created as the text is "unnested" into it (`word`, in this case). This is followed by the input column that the text comes from, which we uncreatively named `text`. Also notice:
-
--   By default, a token is an individual word or unigram.
-
--   Other columns, such as `id` and `created_at`, are retained.
-
--   All punctuation has been removed.
-
--   Tokens have been changed to lowercase, which makes them easier to compare or combine with other datasets (use the `to_lower = FALSE` argument to turn off if desired).
-
-The `unnest_tokens()` function also has specialized `“tweets”` tokenizer in the `tokens =` argument that is very useful for dealing with Twitter text in that it retains hashtags and mentions of usernames with the \@ symbol.
 
 #### Subtopic 1 (If needed)
 
