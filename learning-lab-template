@@ -1,0 +1,44 @@
+---
+title: "Learning Analytics Foundations Learning Lab 4"
+output:
+  html_notebook: default
+  html_document:
+    df_print: paged
+  pdf_document: default
+name: ''
+editor_options:
+  markdown:
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+background on the task, etc.
+
+## 1. PREPARE
+
+### Packages 📦
+
+```{r}
+library(tidyverse)
+```
+
+## 2. WRANGLE
+
+#### [**Your Turn**]{style="color: green;"} **⤵**
+
+## 3. EXPLORE
+
+#### [**Your Turn**]{style="color: green;"} **⤵**
+
+## 4. MODEL
+
+#### [**Your Turn**]{style="color: green;"} **⤵**
+
+## 5. COMMUNICATE
+
+#### [**Your Turn**]{style="color: green;"} **⤵**
