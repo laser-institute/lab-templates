@@ -1,8 +1,10 @@
 ---
-title: "LASER Lab Template"
-author: "LASER Team"
+title: "Title of Lab"
+subtitle: 'XX Learning Lab 1.1'
+author: "LASER Team?"
 date: "`r format(Sys.Date(),'%B %e, %Y')`"
 output:
+  html_notebook:
   html_document:
     toc: true
     toc_depth: 4
@@ -12,34 +14,6 @@ output:
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-## Style guide:
-
--   YAML
-
-    -   Table of contents should be floating and at depth 4
-    -   
-
--   HEADERS
-
-    -   Level 1 header not used. Only for Lab title
-    -   Level 2 Headers are main headers and in all caps and identify step in LA workflow addressed
-    -   Level 3 Headers for main topic covered under each workflow process and follow tidyverse Verb Noun format, e.g. Import Data, Tidy Text,
-    -   Level 4 & 5 headers for subtopics format as you please. And don't be afraid to overuse.
-
--   LISTS
-
-    -   Bulleted and numbered lists use tight layout
-
--   PACKAGES AND FUNCTIONS
-
-    -   when introducing new packages provide a solid description, use hex sticker of available and set width to 20%
-
-        -   use your own discretion for other images
-
-    -   when introducing new functions provide a very thorough explanation of the function and key arguments used
-
--   Label code chunks with one word or hyphenated two word description like "import-csv"\
 
 ## 1. PREPARE
 
